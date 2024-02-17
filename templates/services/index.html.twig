@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ASC - Services
+{% endblock %}
+
+{% block body %}
+	<h1>Liste des services proposés</h1>
+	<section>
+		{% for service in services %}
+			<div class="card-service rounded">
+				<h5 class="card-header">
+					{{ service.title|raw }}
+				</h5>
+				<div class="card-body-service">
+					<blockquote class="blockquote mb-0">
+						<p class="card-text">
+							{{ service.description|raw }}
+						</p>
+					</blockquote>
+				</div>
+			</div>
+		{% else %}
+			<div class="no-service">
+				Aucun service trouvé
+			</div>
+		{% endfor %}
+	</section>
+{% endblock %}
