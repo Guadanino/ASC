@@ -1,2 +1,29 @@
 @import "~bootstrap/scss/bootstrap";
 
+:root {
+    --background: #f8f9fa;
+    --bg-alert: #d4edda;
+    --bg-btn: #007bff;
+    --bg-btn-hover: #0056b3;
+    --border-color-alert: #c3e6cb;
+    --border-color-btn: #007bff;
+    --border-color-btn-hover: #0056b3;
+    --color: #ffffff;
+    --color-alert: #155724;
+    --font-color-black: #1D1D1D;
+    --font-family-nav: 'DM Serif Display', serif;
+    --font-family-body: 'DM Serif Display', serif;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+.line {
+    border-bottom: 0.05rem solid var(--font-color-black);
+  }
